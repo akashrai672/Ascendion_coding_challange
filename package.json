@@ -1,12 +1,27 @@
 {
-  "name": "ascede_code_challange",
+  "name": "ascendion_coding_challange",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "cross-env NODE_ENV=dev ts-node src/main.ts",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=prod node dist/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "cross-env": "^7.0.3"
+  }
 }
